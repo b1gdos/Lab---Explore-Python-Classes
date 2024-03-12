@@ -1,4 +1,4 @@
-Lab - Explore Python Classes
+# Lab - Explore Python Classes
 Objectives
 Part 1: Launch the DEVASC VM
 Part 2: Review Functions, Methods, and Classes
