@@ -58,11 +58,12 @@ Step a: Define the function myCity with the argument city for city name.
 
 Step b-d: Call the function myCity passing it different values for city.
 
-def myCity(city):
- print("I live in " + city + ".")
-myCity("Austin")
-myCity("Tokyo")
-myCity("Salzburg")
+def mycity(city):
+    print("I live in " + city + ".")
+
+mycity("New York")
+mycity("Los Angeles")
+mycity("Chicago")
 
 
 
@@ -70,34 +71,35 @@ Part 4: Define a Class with Methods
 In this part, you'll define a class, use the __init__() function to define a method for the class, and then create instances of the class.
 
 Step 1: Define and then instantiate a class with the __init__() method.
-def __init__(self, name, country):
- self.name = name
- self.country = country
+class Location:
+    def __init__(self, name, country):
+        self.name = name
+        self.country = country
+   
 loc = Location("Ozzie", "Dominican Republic")
-print(loc.name)
-print(loc.country)
+loc.myLocation()
 
- 
 Step 2: Add a method to the Location class.
 class Location:
- def __init__(self, name, country):
-   self.name = name
-   self.country = country
- def myLocation(self):
-   print("Hi, my name is " + self.name + " and I live in " + self.country + ".")
+    def __init__(self, name, country):
+        self.name = name
+        self.country = country
+    def myLocation(self):
+        print("Hi, my name is " + self.name + " and I live in " + self.country + ".")
 
-# First instantiation of the class Location
+loc = Location("Ozzie", "Dominican Republic")
+#print(loc.name)
+#print(loc.country)
+#print(type(loc))
+
+# First instantion of the class Location
 loc1 = Location("Tomas", "Portugal")
 # Call a method from the instantiated class
 loc1.myLocation()
 
 
 Step 3: Instantiate the Location class multiple times and call the myLocation method.
-# First instantion of the class Location
-loc1 = Location("Tomas", "Portugal")
-# Call a method from the instantiated class
-loc1.myLocation()
-# Three more instantiations and method calls for the Location class
+
 loc2 = Location("Ying", "China")
 loc3 = Location("Amare", "Kenya")
 loc2.myLocation()
